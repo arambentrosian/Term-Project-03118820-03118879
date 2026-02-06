@@ -4,9 +4,10 @@ Big data management and information systems - Semester project
 First run these commands to setup packages:
 
     python3 -m venv .venv
-    source .venv/bin/activate
+    .venv\Scripts\Activate.ps1
     python -m pip install --upgrade pip
     pip install -r requirements.txt
+    pip install torch_scatter torch_sparse -f https://data.pyg.org/whl/torch-2.8.0+cpu.html
 
 I.Classification
     a. Unsupervised methods
@@ -40,5 +41,5 @@ III. Perturbations
      python experiments/run_embedding_stability.py
 
     b. GIN
-    
+
      python experiments/run_gin_stability.py
